@@ -1,5 +1,8 @@
+# initiate submodules
+git submodule update --init
+
 # remove existing files and configs
-echo "Removing existing files and configs\n\n"
+echo "Removing existing files and configs"
 rm -rfv ~/.config/nvim 
 
 # create symlinks to dotfiles
