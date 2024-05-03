@@ -4,6 +4,7 @@ git submodule update --init
 # set zsh to default shell and install oh my zsh
 chsh -s $(which zsh)
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # remove existing files and configs
 echo "Removing existing files and configs"
