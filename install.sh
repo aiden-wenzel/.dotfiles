@@ -1,3 +1,6 @@
+# install packages
+sudo pacman -S cmake neovim zsh
+ 
 # initiate submodules
 git submodule update --init
 
