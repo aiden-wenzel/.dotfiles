@@ -1,0 +1,14 @@
+base
+base-devel
+cmake
+gdb
+git
+nano
+neovim
+openssh
+sudo
+unzip
+vi
+vim
+wget
+zsh
