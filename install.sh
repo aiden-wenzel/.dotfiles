@@ -23,3 +23,4 @@ rm -rfv ~/.zshrc
 echo "Create symlinks to dotfiles"
 ln -s /home/$USER/.dotfiles/nvim ~/.config/nvim
 ln -s /home/$USER/.dotfiles/.zshrc ~/.zshrc
+ln -s /home/$USER/.dotfiles/.gitconfig ~/.gitconfig
