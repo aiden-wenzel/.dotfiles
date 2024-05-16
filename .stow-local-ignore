@@ -1,7 +1,7 @@
-.git
-.gitignore
+.git/
+.gitconfig
 .gitmodules
 
-*.sh
-scripts
+install.sh
 packages.txt
+scripts/
