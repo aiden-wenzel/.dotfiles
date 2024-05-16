@@ -1,4 +1,7 @@
 .git
 .gitignore
 .gitmodules
+
 *.sh
+scripts
+packages.txt
