@@ -1,20 +1,22 @@
-base
-base-devel
-cmake
-gdb
-git
-lldb
-nano
-neovim
-openssh
-python-pip
-sdl2
-sdl2_image
-sdl2_mixer
-sdl2_ttf
-sudo
-tmux
-unzip
-vim
-wget
-zsh
+base 3-2
+base-devel 1-1
+cmake 3.29.3-1
+gdb 14.2-2
+git 2.45.0-1
+lldb 17.0.6-2
+nano 8.0-1
+neovim 0.9.5-6
+npm 10.7.0-1
+openssh 9.7p1-2
+python-pip 24.0-2
+sdl2 2.30.3-1
+sdl2_image 2.8.2-4
+sdl2_mixer 2.8.0-1
+sdl2_ttf 2.22.0-1
+stow 2.4.0-1
+sudo 1.9.15.p5-1
+tmux 3.4-7
+unzip 6.0-20
+vim 9.1.0405-1
+wget 1.24.5-2
+zsh 5.9-5
