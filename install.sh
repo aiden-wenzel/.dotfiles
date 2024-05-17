@@ -1,5 +1,6 @@
 sudo pacman -Syu 
-sudo pacman -S --needed - < ../packages.txt
+sudo pacman -S --needed - < packages.txt
+# Install: sudo pacman -Qqe > packages.txt
 
 # make config directory
 mkdir ~/.config
