@@ -9,3 +9,7 @@ mkdir ~/.config
 rm -rfv ~/.bashrc ~/.zshrc 
 rm -rfv ~/.tmux.conf 
 rm -rfv ~/.config/nvim
+
+# initiate submodule 
+git submodule init
+git submodule update
