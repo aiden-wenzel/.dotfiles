@@ -13,3 +13,6 @@ rm -rfv ~/.config/nvim
 # initiate submodule 
 git submodule init
 git submodule update
+
+# stow
+stow .
