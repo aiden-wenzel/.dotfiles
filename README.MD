@@ -15,7 +15,7 @@
 
 ## 1.4 Installing Tmux
 1. Run `sudo apt install tmux`.
-2. Install the tmux plugin manager by running `git clone git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.
+2. Install the tmux plugin manager by running `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`.
 3. Open tmux by typing `tmux` in the command terminal.
 4. Press CRTL-B followed by I to install plugins found in the `.tmux.conf` dotfile.
 
