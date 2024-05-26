@@ -1,7 +1,7 @@
 # 1. Installation
 
 ## 1.1 Clone the Repository
-1. Run `git clone https://github.com/aiden-wenzel/.dotfiles.git` in your home repository.
+1. Run `git clone https://github.com/aiden-wenzel/.dotfiles.git` in your home directory.
 2. Run `cd ~/.dotfiles` to get into the dotfiles directory. 
 
 ## 1.2 Stowing Dotfiles
