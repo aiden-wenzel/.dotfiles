@@ -22,3 +22,10 @@
 ## 1.5 Installing NodeJs
 1. Run the command `wget https://nodejs.org/dist/v22.2.0/node-v22.2.0-linux-x64.tar.xz` while in your home directory.
 2. Open the terminal in your home directory and run the command `sudo tar -xvf node-v22.2.0-linux-x64.tar.xz -C /usr/local`. This will install node in the correct location so that the binaries are on PATH.
+
+## 1.6 Installing ZSH
+1. Run `sudo apt install zsh` to install zsh. 
+2. Run `chsh -s $(which zsh)` to change the shell to be zsh by default.
+3. Run `sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"` to install ohmyzsh.
+4. Run `rm ~/.zshrc`. Installing ohmyzsh will rename the symlink to `.zshrc.pre-oh-my-zsh` 
+5. Run `mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc` to rename the symlink to what it is supposed to be named.
