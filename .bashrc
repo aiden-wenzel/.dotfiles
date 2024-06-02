@@ -121,5 +121,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 export PATH=$PATH:/usr/local/node-v22.2.0-linux-x64/bin
-
+export PATH=$PATH:/usr/local/nvim-linux64/bin
 alias python=python3
