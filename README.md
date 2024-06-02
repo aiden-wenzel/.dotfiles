@@ -9,9 +9,8 @@
 2. Run the `install.sh` script in the dotfiles directory. Do this with `sh install.sh` from within the dotfiles directroy. This will remove old configs and create symlinks in the correct locations pointing to the config files in the dotfiles directory.
 
 ## 1.3 Installing Neovim (Ubuntu)
-1. Run `sudo snap install nvim`. 
-
-    * (Running `sudo apt install neovim` installs an outdated version)
+1. Run `wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz` in the `~` directory
+2. Run `sudo tar -xvf nvim-linux64.tar.gz -C /usr/local`. This will install neovim in the correct location.
 
 ## 1.4 Installing Tmux
 1. Run `sudo apt install tmux`.
