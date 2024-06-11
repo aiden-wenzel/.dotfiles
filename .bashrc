@@ -123,3 +123,6 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/usr/local/node-v22.2.0-linux-x64/bin
 export PATH=$PATH:/usr/local/nvim-linux64/bin
 alias python=python3
+
+eval "$(oh-my-posh init bash)"
+eval "$(oh-my-posh init bash --config ~/gruvbox.omp.json)"
