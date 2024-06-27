@@ -2,7 +2,8 @@
 
 ## 1.1 Clone the Repository
 1. Run `git clone https://github.com/aiden-wenzel/.dotfiles.git` in your home directory.
-2. Run `cd ~/.dotfiles` to get into the dotfiles directory. 
+2. Run `cd ~/.dotfiles` to get into the dotfiles directory.
+3. Run `sudo apt update && sudo apt upgrade`.
 
 ## 1.2 Stowing Dotfiles
 1. Install GNU stow using your prefered package manager. For Ubuntu, run `sudo apt install stow`.
@@ -33,4 +34,4 @@ rm node-v22.2.0-linux-x64.tar.xz
 ```
 
 ## 1.6 Oh-My-Posh
-Run `curl -s https://ohmyposh.dev/install.sh | bash -s`
+Run `curl -s https://ohmyposh.dev/install.sh | sudo bash -s`
