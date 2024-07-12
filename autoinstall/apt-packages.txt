@@ -8,3 +8,5 @@ ripgrep
 wget
 java-common
 java-21-amazon-corretto-jdk
+latexmk 
+zathura
