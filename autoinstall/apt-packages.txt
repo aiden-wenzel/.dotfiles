@@ -4,3 +4,7 @@ unzip
 cmake
 stow
 tmux
+ripgrep
+wget
+java-common
+java-21-amazon-corretto-jdk
