@@ -1,0 +1,14 @@
+python3-venv
+python3-pip
+unzip
+cmake
+stow
+tmux
+ripgrep
+wget
+java-common
+java-21-amazon-corretto-jdk
+latexmk
+zathura
+fzf
+bat
