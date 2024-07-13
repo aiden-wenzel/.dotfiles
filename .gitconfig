@@ -1,3 +1,8 @@
 [user]
 	email = wenzel.aiden@outlook.com
 	name = Aiden Wenzel
+
+[core]
+    editor = nvim
+[init]
+    defaultBranch = main
