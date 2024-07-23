@@ -12,3 +12,4 @@ latexmk
 zathura
 fzf
 bat
+openvpn
