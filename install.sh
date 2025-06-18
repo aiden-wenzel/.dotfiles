@@ -2,16 +2,23 @@ sudo apt update
 sudo apt upgrade
 
 sudo apt install $(cat ./autoinstall/apt-packages.txt)
-sudo snap install $(cat ./autoinstall/snap-packages.txt)
 sh ./autoinstall/other-installs.sh
 sh ./autoinstall/debugpy-venv.sh
 
 rm -v ~/.bashrc
-rm -v ~/.gitconfig
 rm -rfv ~/.config/nvim
-rm -v ~/.zshrc
+rm -v ~/.tmux.conf
 
-stow --ignore="autoinstall" .
+# Git Config
+rm -v ~/.gitconfig
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
+
+# Nvim Installation
+ln -s ~/.dotfiles/.config/nvim ~/.config/nvim
+
+# Tmux Installation
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 
 git submodule init
 git submodule update
