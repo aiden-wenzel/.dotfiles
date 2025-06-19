@@ -1,7 +1,7 @@
 sudo apt update
 sudo apt upgrade
 
-sudo apt install $(cat ./autoinstall/apt-packages.txt)
+sudo apt install $(cat ./apt-packages.txt)
 sh ./autoinstall/other-installs.sh
 sh ./autoinstall/debugpy-venv.sh
 
