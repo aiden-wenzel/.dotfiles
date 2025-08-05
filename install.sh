@@ -13,6 +13,12 @@ ln -s ~/.dotfiles/.bashrc ~/.bashrc
 rm -v ~/.gitconfig
 ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
+# Install Node
+# Required for neovim plugins.
+wget https://nodejs.org/dist/v22.2.0/node-v22.2.0-linux-x64.tar.xz
+sudo tar -xvf node-v22.2.0-linux-x64.tar.xz -C /usr/local
+rm node-v22.2.0-linux-x64.tar.xz
+
 # Nvim Installation
 curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
 tar -xzf nvim-linux-x86_64.tar.gz
@@ -23,6 +29,7 @@ rm -rfv nvim-linux-x86_64.tar.gz nvim-linux-x86_64
 rm -rfv ~/.config/nvim
 git submodule init
 git submodule update
+mkdir -p ~/.config
 ln -s ~/.dotfiles/.config/nvim ~/.config/nvim
 
 # Tmux Installation
