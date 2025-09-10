@@ -40,3 +40,12 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
 rm lazygit.tar.gz lazygit
 ```
+
+## 1.7 Installing TexLive
+```
+cd /tmp
+wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+zcat < install-tl-unx.tar.gz | tar xf - # note final - on that command line
+cd install-tl-2*
+sudo perl ./install-tl --no-interaction # as root or with writable destination
+```

@@ -123,5 +123,5 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$PATH:/usr/local/node-v22.2.0-linux-x64/bin
 export PATH=$PATH:/usr/local/nvim-linux64/bin
 export PATH=$PATH:$HOME/bin
-export PATH=$PATH:/usr/local/texlive/2024/bin/x86_64-linux
+export PATH=$PATH:/usr/local/texlive/2025/bin/x86_64-linux
 alias python=python3
