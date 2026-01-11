@@ -33,7 +33,8 @@ mkdir -p ~/.config
 ln -s ~/.dotfiles/.config/nvim ~/.config/nvim
 
 # Tmux Installation
+sudo apt install tmux
 rm -v ~/.tmux.conf
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 sudo rm -rfv ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf

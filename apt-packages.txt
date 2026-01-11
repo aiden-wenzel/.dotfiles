@@ -10,6 +10,3 @@ grep
 wget
 curl
 fzf
-ibx11-dev
-xserver-xorg-dev
-xorg-dev

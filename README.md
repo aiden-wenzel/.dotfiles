@@ -1,38 +1,47 @@
-# 1. Installation
+# Install packages that I like
+sudo apt update
+sudo apt upgrade
+sudo apt install $(cat ./apt-packages.txt)
 
-## 1.1 Clone the Repository
-1. Run `git clone https://github.com/aiden-wenzel/.dotfiles.git` in your home directory.
-2. Run `cd ~/.dotfiles` to get into the dotfiles directory.
-3. Run `sudo apt update && sudo apt upgrade`.
 
-## 1.2 Stowing Dotfiles
-1. Install GNU stow using your prefered package manager. For Ubuntu, run `sudo apt install stow`.
-2. Run the `install.sh` script in the dotfiles directory. Do this with `sh install.sh` from within the dotfiles directroy. This will remove old configs and create symlinks in the correct locations pointing to the config files in the dotfiles directory.
+# Bashrc
+rm -v ~/.bashrc
+ln -s ~/.dotfiles/.bashrc ~/.bashrc
 
-## 1.3 Install Packages
-1. `sudo apt install -y python3-venv`
-2. `sudo apt install python3-pip`
-3. `sudo apt install unzip`
+# Git Config
+rm -v ~/.gitconfig
+ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
 
-## 1.3 Installing Neovim (Ubuntu)
-1. Run `sudo snap install nvim`.
-
-## 1.4 Installing Tmux
-```
-sudo apt install tmux
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-tmux
-```
-Press CRTL-B followed by I to install plugins found in the `.tmux.conf` dotfile.
-
-## 1.5 Installing NodeJs
-Run 
-```
+# Install Node
+# Required for neovim plugins.
 wget https://nodejs.org/dist/v22.2.0/node-v22.2.0-linux-x64.tar.xz
 sudo tar -xvf node-v22.2.0-linux-x64.tar.xz -C /usr/local
 rm node-v22.2.0-linux-x64.tar.xz
-```
-## 1.6 Installing TMUX
+
+# Nvim Installation
+curl -LO https://github.com/neovim/neovim/releases/download/v0.11.5/nvim-linux-x86_64.tar.gz
+tar -xzf nvim-linux-x86_64.tar.gz
+sudo rm -rfv /usr/local/nvim-linux64
+sudo cp -r nvim-linux-x86_64 /usr/local/nvim-linux64
+rm -rfv nvim-linux-x86_64.tar.gz nvim-linux-x86_64
+
+rm -rfv ~/.config/nvim
+
+# These commands need to be run in .dotfiles directory.
+git submodule init
+git submodule update
+mkdir -p ~/.config
+ln -s ~/.dotfiles/.config/nvim ~/.config/nvim
+
+# Tmux Installation
+sudo apt install tmux
+rm -v ~/.tmux.conf
+ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
+sudo rm -rfv ~/.tmux/plugins/tpm
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+sudo apt install tmux
+
+## 1.6 Installing Lazygit
 ```
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
@@ -41,11 +50,10 @@ sudo install lazygit /usr/local/bin
 rm lazygit.tar.gz lazygit
 ```
 
-## 1.7 Installing TexLive
+## 1.5 Installing NodeJs
+Run 
 ```
-cd /tmp
-wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-zcat < install-tl-unx.tar.gz | tar xf - # note final - on that command line
-cd install-tl-2*
-sudo perl ./install-tl --no-interaction # as root or with writable destination
+wget https://nodejs.org/dist/v22.2.0/node-v22.2.0-linux-x64.tar.xz
+sudo tar -xvf node-v22.2.0-linux-x64.tar.xz -C /usr/local
+rm node-v22.2.0-linux-x64.tar.xz
 ```
