@@ -24,8 +24,13 @@ tar -xzf nvim-linux-x86_64.tar.gz
 sudo rm -rfv /usr/local/nvim-linux64
 sudo cp -r nvim-linux-x86_64 /usr/local/nvim-linux64
 rm -rfv nvim-linux-x86_64.tar.gz nvim-linux-x86_64
-
 rm -rfv ~/.config/nvim
+
+# Hyprland Installation
+git clone --recursive https://github.com/hyprwm/Hyprland
+cd Hyprland
+make all && sudo make install
+
 
 # These commands need to be run in .dotfiles directory.
 git submodule init
